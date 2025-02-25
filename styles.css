@@ -51,3 +51,27 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+/* styles.css */
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    #results-container {
+        flex-direction: column;
+    }
+
+    .result-image {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
