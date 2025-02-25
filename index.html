@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Image File Converter</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Convert</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Upload Image Files</h2>
+            <input type="file" id="file-input" multiple accept="image/*">
+            <p>or drag and drop files here</p>
+        </section>
+
+        <section id="conversion-options">
+            <h2>Conversion Options</h2>
+            <div>
+                <label for="output-format">Output Format:</label>
+                <select id="output-format">
+                    <option value="jpg">JPEG</option>
+                    <option value="png">PNG</option>
+                    <option value="gif">GIF</option>
+                    <option value="bmp">BMP</option>
+                </select>
+            </div>
+            <div>
+                <label for="quality">Quality:</label>
+                <input type="range" id="quality" min="1" max="100" value="80">
+            </div>
+            <div>
+                <label for="resolution">Resolution:</label>
+                <select id="resolution">
+                    <option value="72">72 DPI</option>
+                    <option value="150">150 DPI</option>
+                    <option value="300">300 DPI</option>
+                </select>
+            </div>
+            <button id="convert-btn">Convert</button>
+        </section>
+
+        <section id="conversion-results">
+            <h2>Conversion Results</h2>
+            <div id="results-container"></div>
+        </section>
+
+        <section id="feedback-section">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Image File Converter. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
